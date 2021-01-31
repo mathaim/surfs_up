@@ -1,5 +1,5 @@
 # surfs_up
-Using SQLAlchemy to connect to and query a SQLite database and using data retrieved in a Flask app
+Using SQLAlchemy to connect to and query a SQLite database and analyzing data retrieved 
 
 ## 1. Overview
 In order to determine if the surf and ice cream shop data is sustainable year round, we are comparing weather data from June and December. Using sqlalchemy, we created a query to retrive June and December data from the Date column of the Measurement table of the sqlite file. We then put those temperatures in a list and turned it into a pandas data frame. Lastly, we generated the summary statistics.
@@ -18,6 +18,11 @@ In order to determine if the surf and ice cream shop data is sustainable year ro
 
 - This makes sense because the standard deviation in June is (3.26) while the standard deviation in December is (3.75). This means that December temperatures fluxuate slightly more. 
 
+
 ## 3. Summary
+### Precipitation
+![Dec](Images/June_precip.png) ![June](Images/Dec_precip.png)
+
+- On average, it rains more in December than June. It is possible that this could lead to less business in December, because less people probably want to surf and have ice cream in the rain. 
 
 In conclusion, it doesn't seem like there is that big of a drop in temperature in December to significantly affect the business.
